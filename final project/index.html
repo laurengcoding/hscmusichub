@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music 1 Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header class="header-container">
+        <div class="header-inner-container">
+          <a href="#" class="header-logo-link">
+    <!-- finish dropdown menu-->
+    
+          <nav class="main-nav">
+            <div class="nav-right">
+              <button class="burger-button" type="button">
+                <svg class="icon icon-menu" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" width="100%" height="100%">
+                  <path stroke-width="14" stroke-linecap="round" stroke="#fff" d="M15 20L85 20M15 50L85 50M15 80L85 80" />
+                </svg>
+              </button>
+              <div class ='nav-links'>
+              <a href="#">About</a>
+              <a href="#">Learn</a>
+              <a href="#">Resources</a>
+              </div>
+            </div>
+            <div class="nav-left">
+
+            </div>
+    
+          </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="main-display">
+            <h1 id="heading" class="main-heading">Music 1 Hub</h1>
+                <div class="main-subtitle">
+                    <h3 class="subtitle-text">Master Music Theory</h3>
+                    <h3 class="subtitle-text">Develop Your Aural Skills</h3>
+                    <h3 class="subtitle-text">Blitz the HSC</h3>
+                </div>
+        </section>
+
+        <section class="get-started">
+            <div>
+                <h3 id="heading" class="get-started-heading">Get Started</h3>
+            </div>
+
+            <div class="learning-areas">
+                <button class="learning-area-btn">Concepts of Music</button>
+                <button class="learning-area-btn">Ear Training</button>
+                <button class="learning-area-btn">Notation Zone</button>
+                <button class="learning-area-btn">Quizzes and Games</button>
+            </div>
+        </section>
+
+        <section class="about-us-container">
+            <div class="about-us">
+              <h2 class="about-us-heading">About Us</h2>
+              <p class="welcome-about-us">Welcome to Music 1 Hub - Your Aural Skills Companion!</p>
+              <p class="welcome-about-us">At Music 1 Hub, we're dedicated to helping Stage 6 Music 1 students like you excel in aural skills. Our mission is to provide an engaging platform that empowers you to enhance your aural skills at your own pace while having fun!</p>
+            </div>
+
+            <div class="our-approach">
+              <h2 class="our-approach-heading">Our Approach</h2>
+              <ul class="our-approach-list">
+                <li class="oa-list-item">Self-Paced Learning: Learn on your terms with a variety of activities and exercises that match your unique style and pace.</li>
+                <li class="oa-list-item">Interactive Fun: Enjoy games, quizzes, and challenges that transform learning into an exciting adventure.</li>
+                <li class="oa-list-item">Accessibility Matters: Our content aligns with the NESA Music 1 Syllabus, ensuring access to high-quality, syllabus-relevant materials.</li>
+              </ul>
+            </div>
+
+            <div class="nesa-int-container">
+              <h2 class="nesa-heading">NESA Syllabus Integration</h2>
+              <p class="nesa-info">Our content is designed to align seamlessly with the NESA Music 1 Syllabus. With Music 1 Hub, you'll receive the support you need to confidently navigate your studies and exams.</p>
+              <p class="nesa-info">Don't miss out on this opportunity to supercharge your aural skills. Start learning now and unlock your musical potential!</p>
+            </div>
+
+        </section>
+
+        <section class="user-reviews-container">
+          <div>
+            <h1 class="user-reviews-heading">User Reviews</h1>
+          </div>
+          <div class="user-carousel-container">
+            <ul class="user-carousel">
+              <li class="user-review">"Music 1 Hub has completely transformed how I approach aural skills. The interactive games and quizzes are not only educational but also incredibly fun!"</li>
+              <li class="user-review">"I struggled with aural exercises, but Music 1 Hub made learning engaging and convenient. It's my go-to resource for mastering music theory!"</li>
+              <li class="user-review">"Music 1 Hub's content aligned perfectly with the NESA Music 1 Syllabus. The self-paced learning and syllabus-relevant materials have been instrumental in boosting my confidence for exams."</li>
+              <!--turn this into an automatically rotating carousel in javascript-->
+            </ul>
+          </div>
+        </section>
+
+        <footer class="footer-container">
+            <div class="footer-links-container">
+              <h3 class="footer-link-heading">Explore</h3>
+              <ul class="footer-links">
+                <li class="footer-link-item"><a href="#">Home</a></li>
+                <li class="footer-link-item"><a href="#">About Us</a></li>
+                <li class="footer-link-item"><a href="#">Learn</a></li>
+                <li class="footer-link-item"><a href="#">Resources</a></li>
+                <li class="footer-link-item"><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-social-container">
+              <h3 class="footer-social-heading">Socials</h3>
+              <ul class="footer-socials">
+                <li class="footer-social-item"><a href="#">Facebook</a></li>
+                <li class="footer-social-item"><a href="#">Twitter</a></li>
+                <li class="footer-social-item"><a href="#">Instagram</a></li>
+              </ul>
+            </div>
+          <div class="footer-bottom">
+            <p>&copy; 2023 Music 1 Hub. All rights reserved.</p>
+          </div>
+        </footer>
+
+    <section class="modal-container">
+      <div class="modal-content">
+        <div class="modal-main-container">
+          <h3 class="modal-title">Want extra advice?</h2>
+          <p class="modal-text">Sign up to our newsletter for more</p>
+          <form class="modal-signup">
+            <input type="text" name="name" placeholder="Name" id="name" class="name-field" required>
+            <input type="email" name="email" placeholder="Email" id="email" class="email-field" required>
+            <button class="modal-submit-button" id="modal-submit-button" type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="modal-exit-container">
+          <button class="modal-close-btn" href="#" id="modal-close-btn">X</button>
+        </div>
+    </section>
+    </main>
+</body>
+</html>

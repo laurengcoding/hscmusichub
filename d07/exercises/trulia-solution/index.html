@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Trulia - Solution</title>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner container">
+      <a href="#" class="header-logo-link">
+        <svg class="header-logo" version="1.1" x="0px" y="0px" viewBox="0 0 924.092 294.029" enable-background="new 0 0 924.092 294.029" aria-labelledby="logoTitleImg" role="img"> <title id="logoTitleImg">Trulia Logo</title> <g> <circle fill="#FFFFFF" cx="700.921" cy="54.323" r="22.6"></circle> <path fill="#FFFFFF" d="M257.252,260.428c-32.896,0-49.189-18.798-49.189-50.127v-82.711h-29.762V95.321h29.762V53.967 l39.163-9.713v51.068h41.04v32.268h-41.04v79.265c0,12.531,5.638,17.857,18.169,17.857c8.146,0,14.725-0.312,25.377-1.567v32.896 C279.808,258.86,268.842,260.428,257.252,260.428z"> </path> <path fill="#FFFFFF" d="M397.145,130.097c-27.57,0-41.981,19.736-41.981,46.054v82.083h-39.475V95.321h33.208l3.447,24.436 c7.52-18.798,26.944-26.63,46.054-26.63c4.073,0,8.146,0.314,12.219,0.941v37.594C406.229,130.724,401.53,130.097,397.145,130.097z "> </path> <path fill="#FFFFFF" d="M537.864,258.234l-2.82-21.304c-7.832,15.978-26.003,25.377-46.68,25.377 c-34.776,0-56.394-23.497-56.394-58.273V95.321h39.163v99.94c0,19.112,7.52,31.017,28.197,31.017 c9.085,0,15.351-3.447,20.051-8.146c9.399-8.773,11.905-23.497,11.905-36.655V95.321h39.161v162.913H537.864z"> </path> <path fill="#FFFFFF" d="M640.575,260.113c-26.63,0-44.487-12.846-44.487-43.86V31.722h39.475v177.952 c0,9.399,2.191,15.663,15.663,15.663c3.447,0,4.387-0.312,6.579-0.312v32.894C649.974,259.487,648.407,260.113,640.575,260.113z"> </path> <path fill="#FFFFFF" d="M681.027,258.234V95.321h39.787v162.913H681.027z"></path> <path fill="#FFFFFF" d="M876.275,260.74c-16.919,0-26.318-10.652-27.57-22.871c-7.52,13.16-26.315,24.438-49.501,24.438 c-38.849,0-58.9-24.438-58.9-51.068c0-31.015,24.124-48.874,55.141-51.066l47.933-3.447v-10.025 c0-15.351-5.326-25.691-27.57-25.691c-18.169,0-28.823,8.146-29.762,23.185h-37.908c2.191-36.657,31.329-52.947,67.67-52.947 c27.885,0,51.694,8.773,61.093,33.208c4.073,10.34,4.699,21.93,4.699,32.896v60.465c0,7.52,2.506,10.34,9.085,10.34 c2.508,0,5.014-0.626,5.014-0.626v28.823C889.12,259.175,885.674,260.74,876.275,260.74z M843.378,185.862l-41.355,3.134 c-11.905,0.939-23.497,8.144-23.497,21.304c0,12.531,10.966,20.363,23.183,20.363c24.438,0,41.669-13.158,41.669-37.282V185.862z"> </path> <g> <path fill="#FFFFFF" d="M87.573,31.722c-35.964,0.201-59.18,24.336-59.18,60.831c0,30.212,19.708,56.047,30.941,95.325 c6.431,22.493,9.89,50.025,11.705,70.356h33.068c1.815-20.331,5.274-47.863,11.705-70.356 c11.232-39.278,30.941-65.113,30.941-95.325C146.753,56.058,123.538,31.924,87.573,31.722z M87.763,124.695 c-14.95,0-27.07-12.12-27.07-27.07s12.12-27.07,27.07-27.07c14.951,0,27.07,12.12,27.07,27.07S102.714,124.695,87.763,124.695z"> </path> </g> </g> </svg>
+      </a>
+
+      <button class="burger-button" type="button">
+        <svg class="icon icon-menu" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" width="100%" height="100%">
+          <path stroke-width="14" stroke-linecap="round" stroke="#fff" d="M15 20L85 20M15 50L85 50M15 80L85 80" />
+        </svg>
+      </button>
+
+      <nav class="main-nav">
+        <div class="nav-left">
+          <a href="#">Buy</a>
+          <a href="#">Rent</a>
+          <a href="#">Mortgage</a>
+        </div>
+
+        <div class="nav-right">
+          <a href="#">Saved Homes</a>
+          <a href="#">Saved Searches</a>
+          <a href="#" class="nav-user-link">
+            <svg class="nav-user" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"
+              fill="white">
+              <path
+                d="M88.8,50c0-21.6-17.6-39.2-39.2-39.2S10.4,28.4,10.4,50c0,11.9,5.4,22.6,13.8,29.8c0.1,0.1,0.2,0.2,0.4,0.3  c6.8,5.7,15.5,9.1,25.1,9.1c9.4,0,18.1-3.4,24.9-8.9c0.4-0.1,0.7-0.4,0.9-0.7C83.6,72.3,88.8,61.8,88.8,50z M14,50  c0-19.6,16-35.6,35.6-35.6s35.6,16,35.6,35.6c0,9.6-3.8,18.3-10,24.7c-1-4.7-4-12.7-13.2-17.9c2.1-2.6,3.3-6,3.3-9.6  c0-8.6-7-15.6-15.6-15.6c-8.6,0-15.6,7-15.6,15.6c0,3.6,1.3,6.9,3.3,9.6c-9.3,5.2-12.3,13.2-13.2,17.9C17.9,68.4,14,59.6,14,50z   M37.6,47.3c0-6.6,5.4-12,12-12c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12C43,59.3,37.6,53.9,37.6,47.3z M27.4,77.8  c0.2-2.9,1.8-12.7,12.6-18.2c2.7,2.1,6,3.3,9.6,3.3c3.6,0,7-1.3,9.7-3.4C70,65,71.7,74.6,72,77.7c-6.1,4.9-13.9,7.9-22.3,7.9  C41.2,85.6,33.5,82.7,27.4,77.8z">
+              </path>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="breadcrumbs container">
+    <h4>Homes For Sale & Real Estate in 20010</h4>
+    <p>79 homes available on Trulia</p>
+  </section>
+
+  <main>
+    <ul class="house-listings container">
+      <li class="house-listing">
+        <img class="house-image" src="https://res.cloudinary.com/dlgwpetvg/image/upload/w_480,h_320/fewd-trulia/anubsotby7jo3jhumg1s" />
+        <div class="house-listing-body">
+          <p class="house-price">$475,000</p>
+          <div class="house-facts">
+            <div class="house-beds">
+              <img class="icon icon-bed" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png" alt="Bed icon" />
+              <p>2bd</p>
+            </div>
+            <div class="house-baths">
+              <img class="icon icon-bath" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bath-icon.png" alt="Bath icon" />
+              <p>2ba</p>
+            </div>
+            <p class="house-sqft">715 sqft</p>
+          </div>
+          <p class="house-address">
+            3205 Georgia Ave NW #403 <br />
+            Pleasant Plains, Washington, DC
+          </p>
+        </div>
+      </li>
+
+      <li class="house-listing">
+        <img class="house-image" src="https://res.cloudinary.com/dlgwpetvg/image/upload/w_480,h_320/fewd-trulia/me1wwj2zuz2dsgm5xxwc" />
+        <div class="house-listing-body">
+          <p class="house-price">$774,900</p>
+          <div class="house-facts">
+            <div class="house-beds">
+              <img class="icon icon-bed" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png" alt="Bed icon" />
+              <p>2bd</p>
+            </div>
+            <div class="house-baths">
+              <img class="icon icon-bath" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bath-icon.png" alt="Bath icon" />
+              <p>3ba</p>
+            </div>
+            <p class="house-sqft">1,200 sqft</p>
+          </div>
+          <p class="house-address">
+            3615 10th St NW #8 <br />
+            Columbia Heights, Washington, DC
+          </p>
+        </div>
+      </li>
+
+      <li class="house-listing">
+        <img class="house-image" src="https://res.cloudinary.com/dlgwpetvg/image/upload/w_480,h_320/fewd-trulia/e5hcwmoyq9ye399eakij" />
+        <div class="house-listing-body">
+          <p class="house-price">$600,000</p>
+          <div class="house-facts">
+            <div class="house-beds">
+              <img class="icon icon-bed" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png" alt="Bed icon" />
+              <p>3 bd</p>
+            </div>
+            <div class="house-baths">
+              <img class="icon icon-bath" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bath-icon.png" alt="Bath icon" />
+              <p>2 ba</p>
+            </div>
+            <p class="house-sqft">1,100 sqft</p>
+          </div>
+          <p class="house-address">
+            3120 Park Pl NW <br />
+            Pleasant Plains, Washington, DC
+          </p>
+        </div>
+      </li>
+
+      <li class="house-listing">
+        <img class="house-image" src="https://res.cloudinary.com/dlgwpetvg/image/upload/w_480,h_320/fewd-trulia/wq5e6gx7osd6quty45o5" />
+        <div class="house-listing-body">
+          <p class="house-price">$630,000</p>
+          <div class="house-facts">
+            <div class="house-beds">
+              <img class="icon icon-bed" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png" alt="Bed icon" />
+              <p>2bd</p>
+            </div>
+            <div class="house-baths">
+              <img class="icon icon-bath" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bath-icon.png" alt="Bath icon" />
+              <p>3ba</p>
+            </div>
+            <p class="house-sqft">1,500 sq ft</p>
+          </div>
+          <p class="house-address">
+            3221 Warder St NW #1 <br />
+            Pleasant Plains, Washington, DC
+          </p>
+        </div>
+      </li>
+
+      <li class="house-listing">
+        <img class="house-image" src="https://res.cloudinary.com/dlgwpetvg/image/upload/w_480,h_320/fewd-trulia/coaa6yluacrq2stye4zc" />
+        <div class="house-listing-body">
+          <p class="house-price">$1,295,000</p>
+          <div class="house-facts">
+            <div class="house-beds">
+              <img class="icon icon-bed" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png" alt="Bed icon" />
+              <p>9bd</p>
+            </div>
+            <div class="house-baths">
+              <img class="icon icon-bath" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bath-icon.png" alt="Bath icon" />
+              <p>6ba</p>
+            </div>
+            <p class="house-sqft">3,100 sqft</p>
+          </div>
+          <p class="house-address">
+            705 Kenyon St NW <br />
+            Pleasant Plains, Washington, DC
+          </p>
+        </div>
+      </li>
+
+      <li class="house-listing">
+        <img class="house-image" src="https://res.cloudinary.com/dlgwpetvg/image/upload/w_480,h_320/fewd-trulia/i0iw7va37fdfutgveqw7" />
+        <div class="house-listing-body">
+          <p class="house-price">$1,049,000</p>
+          <div class="house-facts">
+            <div class="house-beds">
+              <img class="icon icon-bed" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png" alt="Bed icon" />
+              <p>6bd</p>
+            </div>
+            <div class="house-baths">
+              <img class="icon icon-bath" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bath-icon.png" alt="Bath icon" />
+              <p>4ba</p>
+            </div>
+            <p class="house-sqft">2,688 sqft</p>
+          </div>
+          <p class="house-address">
+            1363 Oak St NW <br />
+            Columbia Heights, Washington, DC
+          </p>
+        </div>
+      </li>
+
+      <li class="house-listing">
+        <img class="house-image" src="https://res.cloudinary.com/dlgwpetvg/image/upload/w_480,h_320/fewd-trulia/fhbal7l7cc4clptelfvf" />
+        <div class="house-listing-body">
+          <p class="house-price">$720,000</p>
+          <div class="house-facts">
+            <div class="house-beds">
+              <img class="icon icon-bed" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png" alt="Bed icon" />
+              <p>3bd</p>
+            </div>
+            <div class="house-baths">
+              <img class="icon icon-bath" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bath-icon.png" alt="Bath icon" />
+              <p>3ba</p>
+            </div>
+            <p class="house-sqft">1,850 sqft</p>
+          </div>
+          <p class="house-address">
+            1307 Irving St NW #1 <br />
+            Columbia Heights, Washington, DC
+          </p>
+        </div>
+      </li>
+
+      <li class="house-listing">
+        <img class="house-image" src="https://res.cloudinary.com/dlgwpetvg/image/upload/w_480,h_320/fewd-trulia/ww7hb6ldh1giufzyi1ad" />
+        <div class="house-listing-body">
+          <p class="house-price">$760,000</p>
+          <div class="house-facts">
+            <div class="house-beds">
+              <img class="icon icon-bed" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png" alt="Bed icon" />
+              <p>3bd</p>
+            </div>
+            <div class="house-baths">
+              <img class="icon icon-bath" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bath-icon.png" alt="Bath icon" />
+              <p>3ba</p>
+            </div>
+            <p class="house-sqft">1,920 sqft</p>
+          </div>
+          <p class="house-address">
+            752 Park Rd NW <br />
+            Columbia Heights, Washington, DC
+          </p>
+        </div>
+      </li>
+
+      <li class="house-listing">
+        <img class="house-image" src="https://res.cloudinary.com/dlgwpetvg/image/upload/w_480,h_320/fewd-trulia/zr1n1q1wz9vciinixume" />
+        <div class="house-listing-body">
+          <p class="house-price">$760,000</p>
+          <div class="house-facts">
+            <div class="house-beds">
+              <img class="icon icon-bed" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png" alt="Bed icon" />
+              <p>3bd</p>
+            </div>
+            <div class="house-baths">
+              <img class="icon icon-bath" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bath-icon.png" alt="Bath icon" />
+              <p>3ba</p>
+            </div>
+            <p class="house-sqft">1,920 sqft</p>
+          </div>
+          <p class="house-address">
+            752 Park Rd NW <br />
+            Columbia Heights, Washington, DC
+          </p>
+        </div>
+      </li>
+
+      <li class="house-listing">
+        <img class="house-image" src="https://res.cloudinary.com/dlgwpetvg/image/upload/w_480,h_320/fewd-trulia/oithh2cmhsnqtxtolrwc" />
+        <div class="house-listing-body">
+          <p class="house-price">$999,000</p>
+          <div class="house-facts">
+            <div class="house-beds">
+              <img class="icon icon-bed" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png" alt="Bed icon" />
+              <p>2bd</p>
+            </div>
+            <div class="house-baths">
+              <img class="icon icon-bath" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bath-icon.png" alt="Bath icon" />
+              <p>4ba</p>
+            </div>
+            <p class="house-sqft">2,395 sqft</p>
+          </div>
+          <p class="house-address">
+            3511 17th ST NW #7 <br />
+            Mount Pleasant, Washington, DC
+          </p>
+        </div>
+      </li>
+
+      <li class="house-listing">
+        <img class="house-image" src="https://res.cloudinary.com/dlgwpetvg/image/upload/w_480,h_320/fewd-trulia/cheith6agnupff7k12fv" />
+        <div class="house-listing-body">
+          <p class="house-price">$474,500</p>
+          <div class="house-facts">
+            <div class="house-beds">
+              <img class="icon icon-bed" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png" alt="Bed icon" />
+              <p>2bd</p>
+            </div>
+            <div class="house-baths">
+              <img class="icon icon-bath" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bath-icon.png" alt="Bath icon" />
+              <p>1ba</p>
+            </div>
+            <p class="house-sqft">964 sqft</p>
+          </div>
+          <p class="house-address">
+            1356 Kenyon St NW #8 <br />
+            Columbia Heights, Washington, DC
+          </p>
+        </div>
+      </li>
+
+    </ul>
+  </main>
+
+  <div class="nearby container">
+    <section class="nearby-properties">
+      <h3>Nearby Real Estate</h3>
+      <ul>
+        <li><a href="#">Condos for Sale Near Me</a></li>
+        <li><a href="#">Houses for Sale Near Me</a></li>
+        <li><a href="#">Houses for Sale Near Me by Owner</a></li>
+        <li><a href="#">Open Houses Near Me</a></li>
+        <li><a href="#" class="more">More</a></li>
+      </ul>
+    </section>
+
+    <section class="nearby-zip-codes">
+      <h3>Nearby Zip Codes</h3>
+      <ul>
+        <li><a href="#">20005</a></li>
+        <li><a href="#">20004</a></li>
+        <li><a href="#">20565</a></li>
+        <li><a href="#">20217</a></li>
+        <li><a href="#" class="more">More</a></li>
+      </ul>
+    </section>
+
+    <section class="nearby-neighborhoods">
+      <h3>Washington Neighborhoods</h3>
+      <ul>
+        <li><a href="#">Mount Vernon Square</a></li>
+        <li><a href="#">Swampoodle</a></li>
+        <li><a href="#">Bloomingdale</a></li>
+        <li><a href="#">Eckington</a></li>
+        <li><a href="#" class="more">More</a></li>
+      </ul>
+    </section>
+
+    <section class="nearby-property-types">
+      <h3>Washington Property Types</h3>
+      <ul>
+        <li><a href="#">Mobile Homes</a></li>
+        <li><a href="#">For Sale By Owner</a></li>
+        <li><a href="#">Single Family Homes</a></li>
+        <li><a href="#">Condos</a></li>
+        <li><a href="#" class="more">More</a></li>
+      </ul>
+    </section>
+  </div>
+
+</body>
+</html>

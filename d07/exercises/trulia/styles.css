@@ -1,0 +1,64 @@
+/* 
+Colours:
+Green:        #20c063
+Light Grey 1: #e8e9ea
+Light Grey 2: #787d81
+*/
+
+body {
+  margin: 0;
+  font: 16px/1.5 sans-serif;
+  color: #333;
+}
+
+.container {
+  padding: 20px;
+}
+
+header {
+  background-color: #20c063;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+main {
+  background: #e8e9ea;
+}
+
+.house-listings {
+  display: grid;
+  grid-template-columns: 1fr;
+  list-style-type: none;
+}
+
+.house-listing-body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main nav is hidden on narrow (mobile, small tablet) widths and the burger menu
+ * icon is showed instead. Reverse this (show .main-nav, hide .burger-button) at
+ * the breakpoint of your choice. */
+.main-nav {
+  display: none;
+}
+
+.header-logo {
+  width: 132px;
+  height: 42px;
+}
+
+.nav-user {
+  height: 42px;
+}
+
+.burger-button {
+  width: 42px;
+  height: 42px;
+  border: none;
+  background: none;
+}

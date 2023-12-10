@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<form>
+  <h1>Course Application</h1>
+
+  <fieldset>
+    <div>
+    <legend>Your Contact Info</legend>
+    </div>
+    <div>
+      <label for="your-name">Your Name</label>
+      <input id="first" type="text" placeholder="First">
+      <input id="last" type="text" placeholder="Last">
+
+      <br>
+
+      <label for="number">Mobile Number</label>
+      <input id="number" type="number">
+
+      <br>
+
+      <label for="address">Address</label>
+      <input id="street-address" type="text" placeholder="Street Address">
+      <input id="address-line-2" type="text" placeholder="Address Line 2">
+      <input id="city" type="text" placeholder="City">
+      <select>
+        <option>State/Territory</option>
+        <option>Australian Capital Territory</option>
+        <option>New South Wales</option>
+        <option>Northern Territory</option>
+        <option>Queensland</option>
+        <option>South Australia</option>
+        <option>Tasmania</option>
+        <option>Victoria</option>
+        <option>Western Australia</option>
+      </select>
+      <input id="postal-code" type="number" placeholder="Postal Code">
+    </div>
+
+    <br>
+    <div>
+      <legend>Skills & Interests</legend>
+    </div>
+    <div>
+      <legend>Course</legend>
+      <input id="front-end-web-dev>" type="radio">
+      <label for="front-end-web-dev">Front-end Web Development</label>
+      <input id="back-end-web-dev>" type="radio">
+      <label for="back-end-web-dev">Back-end Web Development</label>
+      <input id="visual-design>" type="radio">
+      <label for="visual-design">Visual Design</label>
+      <input id="ux-design>" type="radio">
+      <label for="ux-design">User Experience Design</label>
+    </div>
+
+    <br>
+
+    <div>
+      <label for="past-experience">Past Experience</label>
+      <textarea id="past-experience"></textarea>
+    </div>
+
+    <br>
+
+    <input type="submit">
+
+  </fieldset>
+
+</form>
+</body>
+</html>

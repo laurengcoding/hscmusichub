@@ -1,0 +1,11 @@
+body {
+  max-width: 680px;
+  padding: 0;
+  margin: 3em;
+  font: 18px/1.5 sans-serif;
+  color: #333;
+}
+
+.clicked {
+  border: 1px solid rgb(189, 98, 98);
+}

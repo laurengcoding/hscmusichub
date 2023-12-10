@@ -1,0 +1,146 @@
+/*
+ * Lay this page out - make it responsive, use grid, flex, position and media queries where needed.
+ *
+ * Colors-
+ * Green: #14a96d
+ * White: #fff
+ * Light gray: #f4f5f6
+ * Border gray: #cfd7de
+ * Dark text: #1b1f23
+ * Lighter text: #66727c
+ * Blue for links: #06748a
+ * Blue for hovered links: #033641
+ */
+
+/* Globals */
+body {
+  font: 16px/1.6 'Cabin', sans-serif;
+  color: #333;
+}
+
+
+.rover-hp-container {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1000px;
+}
+
+.rover-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.rover-header-image {
+  display: block;
+}
+
+.nav-left, .nav-right {
+  display: none;
+}
+
+/* come back to this... css for styling and use js for the button functionality? */
+
+.rover-hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 0 40px 0;
+}
+
+.rover-hero-info {
+  font-size: 28px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+.rover-cta {
+background-color: #14a96d;
+width: 100%;
+padding: 10px 0 10px 0;
+text-align: center;
+text-decoration: none;
+color: #fff;
+border-color: #cfd7de;
+font-size: 18px;
+}
+
+.rover-middle-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rover-mobile-hero-container {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.rover-mobile-hero {
+  height: 300px;
+  align-content: space-between;
+}
+
+.rover-two-boxes-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rover-facts-container {
+  display: grid;
+  grid-template-columns: 1fr;
+
+}
+
+.rover-fact-indiv {
+  display: flex;
+}
+
+.rover-fact-indiv img {
+  width: 80px;
+  height: 80px;
+  margin: 11px;
+}
+
+.rover-fact-indiv p {
+  color: #66727c;
+}
+
+.rover-cta-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.rover-cta-container {
+  border: solid #66727c;
+  width: 100%;
+}
+
+.rover-cta-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f5f6;
+  padding: 15px;
+  border-bottom: 1px solid #66727c;
+}
+
+.rover-cta-header img {
+  width: 40px;
+  padding-right: 20px;
+}
+
+.rover-cta-bottom-container {
+  padding: 20px;
+}
+

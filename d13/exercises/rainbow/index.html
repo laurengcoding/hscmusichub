@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rainbow</title>
+  <style>
+    body {
+      margin: 0;
+      font: 24px/1.5 sans-serif;
+      color: #333;
+      text-align: center;
+    }
+    .rainbow {
+      height: 100vh;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: stretch;
+      align-items: stretch;
+      list-style: none;
+    }
+    .rainbow li {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      text-shadow:
+        -1px -1px 0 #fff,  
+         1px -1px 0 #fff,
+        -1px  1px 0 #fff,
+         1px  1px 0 #fff;
+      letter-spacing: 3px;
+    }
+    .rainbow li:hover {
+      font-weight: bold;
+      background: #f6f6f6;
+    }
+  </style>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <ul class="rainbow">
+    <li class="rainbow-band">red</li>
+    <li class="rainbow-band">orange</li>
+    <li class="rainbow-band">yellow</li>
+    <li class="rainbow-band">green</li>
+    <li class="rainbow-band">blue</li>
+    <li class="rainbow-band">indigo</li>
+    <li class="rainbow-band">violet</li>
+  </ul>
+</body>
+</html>

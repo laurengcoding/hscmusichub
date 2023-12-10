@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 680px;
+  margin: 52px auto;
+  font: 13px/2 "Helvetica Neue", Verdana, sans-serif;
+  color: #333;
+}

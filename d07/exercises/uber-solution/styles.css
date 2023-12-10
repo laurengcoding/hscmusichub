@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font: 16px/1.5 sans-serif;
+  color: #333;
+}
+
+.highlights-container {
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+
+  /* The .highlight sections are block-level so they already stack vertically so
+   * technically we don't need to use flex (w/ column direction) for mobile. The
+   * advantage of doing so is so we can have consistent gutters whether in column
+   * or row layout using gap instead of messing aroudn with margins on the
+   * sections. */
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.highlight {
+  display: flex;
+  flex-direction: column;
+}
+
+.highlight svg {
+  /* Lock down the image size by setting a fixed with and opting out of flexbox
+   * shrinking the image. */
+  width: 120px;
+  flex-shrink: 0;
+}
+
+@media (min-width: 546px) and (max-width: 767px) {
+  /* Apply the tablet layout only when between two breakpoints. The desktop
+   * layout (>= 769px) will get the same column, gap-less styles as mobile. */
+  .highlight {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .highlights-container {
+    flex-direction: row;
+  }
+}
